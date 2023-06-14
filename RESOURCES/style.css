@@ -1,0 +1,190 @@
+body {/* STILO DE TODOS LOS CONTAINER DE LAS PAGINAS*/
+  margin: 0;
+  background-color: rgb(84, 92, 92);
+}
+
+.container{
+    display: grid;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    color: rgb(228, 216, 216);
+    text-decoration:none;
+   
+}
+.container h1{
+  text-align: center;
+  color: rgb(228, 216, 216);
+  text-decoration:none;
+}
+
+.container h2{
+    text-align: justify;
+    color: rgb(228, 216, 216);
+    text-decoration:none;
+}
+
+.row{/*STILO SOLO PAGINA MI PRIMERA WEB*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.column{
+    flex:1;
+    padding: 10px;
+}
+
+
+.container-nav {/*ESTILO GENERAL DE LA BARRA DE NAVEGACION*/
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: black;
+    font-size: 25px;
+    
+  }
+  
+  
+  .navbar {/* ADJUSTE DE LOS MENUS DE LA BARRA DE NAVEGACION*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  
+  .brand {/*UNA CLASE AISLADA PARA QUE NO SALGA JUNTO A LOS MAS ELEMENTOS DE LA BARRA DE NAVEGACIÓN*/
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+  }
+  
+  
+  
+  li>a { /* establece los valores de posicón de los valores de li >a */
+    padding: 8px 24px;
+  }
+  
+  
+  li { /*resetea los valores li*/
+    list-style-type: none;
+  }
+  
+  
+  a {/*da color al texto de la barr de menu*/
+    color: rgb(228, 216, 216);
+    text-decoration:none;
+  }
+  
+  
+  .nav-links {/*tipo de formato de posición a los valores de menu*/
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .button-menu-toggle {/* se crea un botton pero desactivado*/ 
+    display: none;
+  }
+
+  .imagen{/*STILO PARA LAS IMAGENES DE ABOUT*/
+    display: flex;
+    justify-content: center;
+  
+    
+    
+  }
+  
+  .imag {
+    width: 400px;
+    height: 400px;
+    padding-inline: 20px;
+    
+    
+
+  }
+
+  .container_about{/*ESTILO CONTENIDO DE LA PAGINA ABOUT*/
+    display: grid;
+    color: rgb(228, 216, 216);
+    text-decoration:none;
+        
+
+  }
+
+  .titulo_about {
+    display: grid;
+    justify-content: center;
+
+    
+    
+
+  } 
+
+
+
+  .mf{
+    display:grid;
+    
+
+  }
+
+
+  .mf #nombre, #email{
+    
+    width: 400px;
+    
+  }
+
+  .mf #mensaje{
+    
+    height: 200px;
+  }
+
+
+
+
+
+  @media (max-width: 768px) {/* Pantalla menores afecta los siguiente*/
+
+    .column {
+      flex: 100%;
+    }
+  
+  
+    .nav-links {/* oculta la lista de la barra de naveggación cuando
+        baje menos de 768*/
+      display: none;
+    }
+  
+  
+    .button-menu-toggle { /* llama al boton buttom menu togle y dale un
+        display tipo block, con fodo blanco sin border y border radius 
+        osea circular, y estio al texto*/
+      display: block;
+      background-color: white;
+      border:none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+   
+    .nav-links.nav-links-responsive {
+      position: absolute;/* cita al menu nav link responsive dandole un 
+      formato de posición*/
+      display: flex;
+      background-color: rgba(20,20,20,0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+  
+  
+    }
+  }
