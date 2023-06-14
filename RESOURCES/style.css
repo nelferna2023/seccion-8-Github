@@ -85,7 +85,9 @@ body {/* STILO DE TODOS LOS CONTAINER DE LAS PAGINAS*/
   .button-menu-toggle {/* se crea un botton pero desactivado*/ 
     display: none;
   }
-
+.greeting{
+  text-align: center;
+}
   .imagen{/*STILO PARA LAS IMAGENES DE ABOUT*/
     display: flex;
     justify-content: center;
